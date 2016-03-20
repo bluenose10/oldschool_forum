@@ -1,7 +1,6 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project was built bt Mark Moran for University project.
 
 Things you may want to cover:
 
