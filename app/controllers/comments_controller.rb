@@ -4,8 +4,7 @@ class CommentsController < ApplicationController
  	 before_action :find_comment, only: [:edit, :update, :destroy] 
      
     def create 
-        @message = Message.find(params[:message_id])
-  		@comment = @message.comments.create(comment_params)
+       	@comment = @message.comments.create(comment_params)
   		@comment.user_id = current_user.id   
   		
   		if @comment.save 
