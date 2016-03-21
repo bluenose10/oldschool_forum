@@ -3,12 +3,17 @@ class CommentsController < ApplicationController
      before_action :find_message, only: [:create, :edit, :update, :destroy]
  	 before_action :find_comment, only: [:edit, :update, :destroy] 
      
-    def create		
+    def create 
+        @message = Message.find(params[:message_id])
   		@comment = @message.comments.create(comment_params)
-  		@comment.user_id = current_user.id  
+  		@comment.user_id = current_user.id   
   		
+  		if @comment.save 
+  		    redirect_to message_path(@message) 
+  		else 
+  		    render 'new'
+                end
     end
-end
   
  	def edit
  	end
@@ -39,4 +44,4 @@ end
  	def find_comment
  		@comment = @message.comments.find(params[:id])
  	end
-
+end
