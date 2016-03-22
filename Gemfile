@@ -6,6 +6,7 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'simple_form', '~> 3.1.0' 
 gem 'bootstrap-sass', '~> 3.3.4.1' 
+gem 'font-awesome-sass', '~> 4.5.0'
 gem 'devise', '~> 3.5', '>= 3.5.6' 
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
