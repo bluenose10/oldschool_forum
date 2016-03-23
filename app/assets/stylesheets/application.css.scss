@@ -5,7 +5,6 @@
 @import "font-awesome";
  
  /* General styles */
- 
  body {
 background: #1A2980; /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #1A2980 , #26D0CE); /* Chrome 10-25, Safari 5.1-6 */
@@ -15,11 +14,13 @@ font-family: 'Lato', sans-serif;
 .jumbotron{ 
 background-color: #9696a9; 
 border-bottom: 4px solid #ec6767; 
-color: #000; 
+color: #000;  
+
 .jumbotron, h1 { 
 font-family: 'Lato', sans-serif;
 font-weight: 300; 
-color: #000;
+color: #000;  
+
 } 
 
 } 
@@ -35,8 +36,7 @@ ul.nav a:hover { color: #26D0CE !important; }
  	font-family: 'Asap', sans-serif; 
  	font-weight: 300;
  	border-radius: 6px;
- 	padding: 10px 20px;
- 	&:hover {
+ 		&:hover {
  		color: #383838;
  		transition: 0.5s;
  		background-color: #26D0CE;
@@ -55,7 +55,7 @@ ul.nav a:hover { color: #26D0CE !important; }
  
  .navbar {
  	font-family: 'Candal', sans-serif;
- 
+  margin-bottom:5px; /*add this*/
  }
  
  .navbar-default {
@@ -63,12 +63,11 @@ ul.nav a:hover { color: #26D0CE !important; }
  	padding-top: 5px;
  	padding-bottom: 5px;
  	background-color: #000;
-
- 	.navbar-nav > li > a {
- 		color: #fff;
- 	}
  
- 	.navbar-link {
+ 	.navbar-nav > li > a {
+ 		color: #fff; 
+	}
+.navbar-link {
  		color: #fff;
  	}
   .nav > li > a:hover{
@@ -77,14 +76,13 @@ ul.nav a:hover { color: #26D0CE !important; }
  	.navbar-brand {
  		color: #fff;
  		letter-spacing: 1.1px;
- 		font-size: 1.9em;
+ 		font-size: 1.9em; 
+ 	
  	}
  
  }
- 
- 
+
  /* Links styles */
- 
  .links {
  	margin-top: 20px;
  	.btn-default {

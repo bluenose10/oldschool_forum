@@ -1,4 +1,8 @@
-<% @messages.each do |message| %>
+<div class="jumbotron text-center">  
+   <h1>Welcome to OldSchool</h1> 
+   <h3>A Forum for mature students</h3> 
+ </div>  
+ <% @messages.each do |message| %> 
  	<div class="col-md-10 col-md-offset-1">
  		<div class="message">
  			<h2 class="message-title"><%= message.title %></h2>
@@ -7,5 +11,5 @@
  	</div>
  
  <% end %>
- 
+
  
