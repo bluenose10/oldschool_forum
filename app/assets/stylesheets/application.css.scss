@@ -12,12 +12,22 @@ background: -webkit-linear-gradient(to left, #1A2980 , #26D0CE); /* Chrome 10-25
 background: linear-gradient(to left, #1A2980 , #26D0CE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 font-family: 'Lato', sans-serif;
  }
+.jumbotron{ 
+background-color: #9696a9; 
+border-bottom: 4px solid #ec6767; 
+color: #000; 
+.jumbotron, h1 { 
+font-family: 'Lato', sans-serif;
+font-weight: 300; 
+color: #000;
+}
 
+}
  h1, h2, h3, h4, h5, h6 {
  	font-family: 'Lato', sans-serif;
  	font-weight: 300;	
  }
- 
+ul.nav a:hover { color: #26D0CE !important; }
  .btn-custom {
  	background-color: #fff;
  	color: #ec6767;
@@ -28,7 +38,7 @@ font-family: 'Lato', sans-serif;
  	&:hover {
  		color: #383838;
  		transition: 0.5s;
- 		background-color: #fff;
+ 		background-color: #26D0CE;
  		text-decoration: none;
  	}
  }
@@ -36,7 +46,7 @@ font-family: 'Lato', sans-serif;
  .btn:hover {
  	transition: 0.5s;
  	color: #383838;
- 	background-color: #fff;
+ 	background-color: #FF0000;
  }
  
  
@@ -168,7 +178,7 @@ font-family: 'Lato', sans-serif;
  	.links {
  		margin-top: 15px;
  		a {
- 			color: #FFF;
+ 			color: #fff;
  			margin-right: 15px;
  		}
  	}
