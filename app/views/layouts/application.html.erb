@@ -3,48 +3,46 @@
 <head> 
  <meta name="author" content="Mark Moran"> 
   <title>Mature Student Forum</title> 
-  <meta name="description" content="Mature student forum, OldSchool was developed to aid the mature student 
+  <meta name="description" content="Mature student forum, OldSchool was developed to aid mature students 
   with information about higher education." />
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
    <body>  
-   <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class='container'>
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-	   <%= link_to root_path, class: "navbar-brand" do %> 
- 	     <span style="color:#ffff00"> <i class="fa fa-graduation-cap"></i></span>
-            <span style="color:#64FE2E">OldSchool Forum</span>
-            <% end %>  
-          </div>  
-        <div class="collapse navbar-collapse" id="main-nav-collapse">
- 	       <ul class="navbar-nav nav navbar-right">
- 	      <% if user_signed_in? %> 
- 	       <li><%= link_to "New Post", new_message_path %></li>
-	       <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li> 
-	      <% else %> 
-        	  <li><%= link_to "Login", new_user_session_path %></li>
-        	  <li><%= link_to "Sign Up", new_user_registration_path %></li>
-        <% end %> 
-              </div>
-         </ul> 
-       </div> 
-      </nav> 
-  
- <p class="notice"><%= notice %></p>
- <p class="alert"><%= alert %></p>
- 
-  <div class="container">
- 	<%= yield %>
-	</div>
-  
-  </body> 
-  
-</html>
+      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+       <div class='container'>
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+   	   <%= link_to root_path, class: "navbar-brand" do %> 
+    	     <span style="color:#ffff00"> <i class="fa fa-graduation-cap"></i></span>
+               <span style="color:#64FE2E">OldSchool Forum</span>
+               <% end %>  
+             </div>  
+           <div class="collapse navbar-collapse" id="main-nav-collapse">
+    	       <ul class="navbar-nav nav navbar-right">
+    	      <% if user_signed_in? %> 
+    	       <li><%= link_to "New Post", new_message_path %></li>
+   	       <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li> 
+   	      <% else %> 
+           	  <li><%= link_to "Login", new_user_session_path %></li>
+           	  <li><%= link_to "Sign Up", new_user_registration_path %></li>
+           <% end %> 
+                 </div>
+            </ul> 
+          </div> 
+         </nav> 
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+     <div class="container"> 
+      
+     	 <%= yield %> 
+     
+   	</div>
+    </body> 
+  </html>
