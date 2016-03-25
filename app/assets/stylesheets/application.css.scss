@@ -17,8 +17,9 @@ border-bottom: 4px solid #64FE2E;
 color: #000; 
 font-family:  sans-serif;
 font-weight: 300; 
-} 
 
+} 
+.navbar { margin-bottom:20px;}
 .jumbotron{
     height: 40vh;
 }
@@ -55,7 +56,8 @@ ul.nav a:hover { color: #64FE2E !important; }
  
  .navbar {
  	font-family: 'Candal', sans-serif;
-  margin:0; /*add this*/
+  margin:10; /*add this*/ 
+ 
  }
  
  .navbar-default {
